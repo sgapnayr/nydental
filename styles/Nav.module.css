@@ -1,0 +1,39 @@
+.NavBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    height: 10vh;
+}
+
+/* Logo */
+.Logo {}
+
+/* Selectors */
+.Selectors {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Link {
+    margin: 0 5%;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.Link:hover {
+    color: turquoise;
+}
+
+.Link:active {
+    color: rgb(189, 15, 166);
+}
