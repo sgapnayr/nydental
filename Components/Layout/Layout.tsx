@@ -1,8 +1,12 @@
-import React, { children } from 'react'
+import React, { Children } from 'react'
 import Footer from './Footer'
 import Nav from './Nav'
 
-function Layout({ children }): JSX.Element {
+interface Props {
+    children: JSX.Element
+}
+
+const Layout: React.FC<Props> = ({ children }) => {
     return (
         <div>
             <Nav />
