@@ -10,7 +10,11 @@
 }
 
 /* Logo */
-.Logo {}
+.Logo {
+    object-fit: contain;
+    width: 100px;
+    margin: 1rem 0;
+}
 
 /* Selectors */
 .Selectors {
