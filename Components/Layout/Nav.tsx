@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import styles from '../../styles/Nav.module.css'
+import styles from './/Nav.module.css'
 import Logo from '../../Assets/logo2.png'
 
 function Nav() {

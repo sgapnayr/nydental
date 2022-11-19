@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import styles from '../../../styles/Home.module.css'
+import styles from './Info1.module.css'
 import image from '../../../Assets/person1.jpg'
 
 function Info1() {
@@ -22,7 +22,6 @@ function Info1() {
                     Dr. Danielle Adelpour
                 </div>
             </div>
-
             <Image className={styles.InfoImage} src={image} alt={''} />
         </div >
     )

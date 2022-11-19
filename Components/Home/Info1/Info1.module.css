@@ -1,0 +1,91 @@
+.Info1 {
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(40, 39, 39);
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.5);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.5)),
+        url(../../../Assets/texture4.jpg);
+}
+
+.InfoCard1 {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    background-color: transparent;
+    backdrop-filter: blur(18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    padding: 1.5rem;
+    border-image: linear-gradient(#ecd73e, gold) 30;
+    border-width: 2px;
+    border-style: solid;
+    z-index: 1;
+    margin-right: 50px;
+    margin-bottom: 200px;
+    font-style: italic;
+}
+
+.InfoImage {
+    width: 55%;
+    height: 70%;
+    object-fit: contain;
+    position: absolute;
+    right: 0%;
+    z-index: 0;
+    filter: brightness(.95);
+}
+
+.InfoCard2 {
+    width: 60%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    padding: 2rem;
+    border-image: linear-gradient(#ecd73e, gold) 30;
+    border-width: 2px;
+    border-style: solid;
+    z-index: 1;
+    margin-right: 200px;
+    margin-top: 25px;
+}
+
+.InfoCard3 {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    padding: 2rem;
+    border-image: linear-gradient(#ecd73e, gold) 30;
+    border-bottom: 2px solid;
+    z-index: 1;
+    color: white;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 3rem;
+    margin-left: -10rem;
+}
+
+.CardFooter {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 1rem 0 0 0;
+}

@@ -1,0 +1,55 @@
+.Info2 {
+    scroll-snap-align: center;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.LeftSide {
+    width: 100%;
+    min-height: 75vh;
+    background-color: rgb(38, 35, 35);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RightSide {
+    width: 100%;
+    min-height: 75vh;
+    background-color: rgb(239, 237, 233);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextBox {
+    width: 80%;
+}
+
+.Header {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    margin: 1rem 0;
+    background: -webkit-linear-gradient(#dcc725, rgb(208, 185, 50));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Logo {
+    object-fit: contain;
+    width: 10rem;
+    opacity: .25;
+}
+
+.Image1 {
+    object-fit: contain;
+    width: 10rem;
+    position: absolute;
+}

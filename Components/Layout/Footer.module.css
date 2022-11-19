@@ -1,0 +1,34 @@
+.Footer {
+    scroll-snap-align: center;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .75);
+    color: white;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, .25)),
+        url(../../Assets/texture4.jpg);
+}
+
+.Link {
+    color: turquoise;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.Link:hover {
+    color: white;
+}
+
+.FooterImage {
+    object-fit: contain;
+    min-height: 5vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    display: none;
+}

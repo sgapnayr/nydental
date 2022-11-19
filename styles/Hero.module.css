@@ -1,0 +1,58 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.HeroContainer {
+  scroll-snap-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.86), rgba(4, 9, 30, 0.55)),
+    url(../Assets/texture2.jpg);
+}
+
+.Hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  flex-direction: column;
+}
+
+.HeroHead {
+  font-size: 3rem;
+  font-style: italic;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.HeroDesc {
+  font-size: 1rem;
+  letter-spacing: 1rem;
+  opacity: .5;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  font-style: italic;
+  margin: 1rem 0 1rem 0;
+}
+
+.HeroDesc2 {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  padding: 1rem;
+  font-style: italic;
+  opacity: .75;
+}
+
+.HeroLine {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  margin: 1rem 0 -1rem 0;
+  border-top: 1px solid white;
+  padding: 1rem;
+  width: 55%;
+}
