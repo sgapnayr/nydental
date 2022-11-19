@@ -16,6 +16,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.Button {
+    padding: 1rem 2rem;
+    background: transparent;
+    color: white;
+    opacity: .5;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    position: relative;
+}
+
+.Button::after,
+.Button::before {
+    border: 2px solid white;
+    content: '';
+    position: absolute;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .2s all ease-in-out;
+}
+
+.Button:hover {
+    opacity: 1;
+}
+
+.Button:active {
+    transform: scale(.9);
+    opacity: 0;
+}
+
+.Button:hover::after {
+    transform: translateX(-10%) translateY(-10%);
+}
+
+.Button:hover::before {
+    transform: translateX(10%) translateY(10%);
 }
 
 .RightSide {
@@ -29,17 +79,29 @@
 }
 
 .TextBox {
-    width: 80%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Header {
-    font-size: 2rem;
+    z-index: 1;
+    position: relative;
+    font-size: 3rem;
     font-weight: 700;
     font-style: italic;
     margin: 1rem 0;
-    background: -webkit-linear-gradient(#dcc725, rgb(208, 185, 50));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+.TextDesc {
+    z-index: 1;
+    position: relative;
+    color: white;
+    font-style: italic;
+    text-shadow: 1px 1px 18px rgba(0, 0, 0, 1);
+    letter-spacing: .025rem;
 }
 
 .Logo {
@@ -50,6 +112,30 @@
 
 .Image1 {
     object-fit: contain;
-    width: 10rem;
+    width: 300px;
     position: absolute;
+    z-index: 1;
+    filter: brightness(.5) contrast(.95);
+    right: 33%;
+    margin: -3rem 0 0 0;
+}
+
+.Image2 {
+    object-fit: contain;
+    width: 420px;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(.5) contrast(.95);
+    right: 5%;
+    margin: 8rem 0 0 0;
+}
+
+.Image3 {
+    object-fit: contain;
+    width: 375px;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(.5) contrast(.95);
+    right: 7%;
+    margin: -8rem 0 0 0;
 }
