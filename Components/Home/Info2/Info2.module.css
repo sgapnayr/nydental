@@ -19,11 +19,10 @@
     flex-direction: column;
 }
 
-.Button {
+.LearnButton {
     padding: 1rem 2rem;
     background: transparent;
     color: white;
-    opacity: .5;
     font-size: 1.25rem;
     cursor: pointer;
     transition: .2s all ease-in-out;
@@ -38,8 +37,8 @@
     position: relative;
 }
 
-.Button::after,
-.Button::before {
+.LearnButton::after,
+.LearnButton::before {
     border: 2px solid white;
     content: '';
     position: absolute;
@@ -51,21 +50,24 @@
     transition: .2s all ease-in-out;
 }
 
-.Button:hover {
+.LearnButton:hover {
     opacity: 1;
+    color: gold;
 }
 
-.Button:active {
+.LearnButton:active {
     transform: scale(.9);
     opacity: 0;
 }
 
-.Button:hover::after {
+.LearnButton:hover::after {
     transform: translateX(-10%) translateY(-10%);
+    border: 2px solid gold;
 }
 
-.Button:hover::before {
+.LearnButton:hover::before {
     transform: translateX(10%) translateY(10%);
+    border: 2px solid gold;
 }
 
 .RightSide {
