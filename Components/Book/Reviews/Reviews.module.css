@@ -120,6 +120,6 @@
 }
 
 .SubmitButton:active {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }

@@ -5,7 +5,7 @@ import styles from './Reviews.module.css'
 
 function Reviews() {
     const [value, setValue] = useState<string>('')
-    const [tileId, setTileId] = useState<number>(0)
+    const [tileId, setTileId] = useState<number>(2)
     const dispatch = useDispatch()
     const selectedTile = useSelector(selectTitle)
 
@@ -38,8 +38,8 @@ function Reviews() {
                 <div className={styles.InputDiv}>
                     Emergency?
                     <div className={styles.EmergencyDiv}>
-                        <button className={tileId === 1 ? styles.EmergencyButton : styles.EmergencyButtonHighlighted} onClick={() => setTileId(0)}>No</button>
-                        <button className={tileId === 0 ? styles.EmergencyButton : styles.EmergencyButtonHighlighted} onClick={() => setTileId(1)}>Yes</button>
+                        <button className={tileId === 2 ? styles.EmergencyButton : tileId === 1 ? styles.EmergencyButton : styles.EmergencyButtonHighlighted} onClick={() => setTileId(0)}>No</button>
+                        <button className={tileId === 2 ? styles.EmergencyButton : tileId === 0 ? styles.EmergencyButton : styles.EmergencyButtonHighlighted} onClick={() => setTileId(1)}>Yes</button>
                     </div>
                 </div>
                 <div className={styles.InputDiv}>
