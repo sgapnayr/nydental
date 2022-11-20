@@ -22,7 +22,7 @@ function Info1() {
                     Dr. Danielle Adelpour
                 </div>
             </div>
-            <Image className={styles.InfoImage} src={image} alt={''} />
+            <Image className={styles.InfoImage} loading='lazy' src={image} alt={''} />
         </div >
     )
 }

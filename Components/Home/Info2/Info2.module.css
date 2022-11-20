@@ -1,6 +1,6 @@
 .Info2 {
     scroll-snap-align: center;
-    min-height: 75vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@
 
 .LeftSide {
     width: 100%;
-    min-height: 75vh;
+    min-height: 100vh;
     background-color: rgb(38, 35, 35);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
     display: flex;
@@ -35,6 +35,7 @@
     align-items: center;
     margin: 2rem;
     position: relative;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 
 .LearnButton::after,
@@ -48,11 +49,13 @@
     bottom: 0;
     z-index: -1;
     transition: .2s all ease-in-out;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
 }
 
 .LearnButton:hover {
     opacity: 1;
-    color: gold;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    color: rgb(156, 139, 41);
 }
 
 .LearnButton:active {
@@ -62,17 +65,19 @@
 
 .LearnButton:hover::after {
     transform: translateX(-10%) translateY(-10%);
-    border: 2px solid gold;
+    border: 2px solid rgb(156, 139, 41);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 
 .LearnButton:hover::before {
     transform: translateX(10%) translateY(10%);
-    border: 2px solid gold;
+    border: 2px solid rgb(156, 139, 41);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 
 .RightSide {
     width: 100%;
-    min-height: 75vh;
+    min-height: 100vh;
     background-color: rgb(239, 237, 233);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5) inset;
     display: flex;

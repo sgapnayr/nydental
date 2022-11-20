@@ -18,7 +18,7 @@ function Info() {
                     </div>
                 </div>
                 <div className={styles.ImageWrapper}>
-                    <Image className={styles.Image} src={Person} alt='' />
+                    <Image className={styles.Image} loading='lazy' src={Person} alt='' />
                     <div className={styles.StatsWrapper}>
                         <div className={styles.Stats}>
                             Age:

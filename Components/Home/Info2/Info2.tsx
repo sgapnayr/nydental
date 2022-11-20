@@ -5,7 +5,7 @@ import Logo from '../../../Assets/logo2.png'
 import Image1 from '../../../Assets/newyork4.jpg'
 import Image2 from '../../../Assets/newyork1.jpg'
 import Image3 from '../../../Assets/person2.jpg'
-import Image4 from '../../../Assets/newyork2.jpg'
+import Image4 from '../../../Assets/cNewYork2.jpg'
 import Image5 from '../../../Assets/office2.jpg'
 import Image6 from '../../../Assets/office1.jpg'
 import Link from 'next/link'
@@ -14,11 +14,11 @@ function Info2() {
     return (
         <>
             <div className={styles.Info2}>
-                <Image className={styles.Image4} src={Image4} alt={''} />
-                <Image className={styles.Image5} src={Image5} alt={''} />
-                <Image className={styles.Image6} src={Image6} alt={''} />
+                <Image className={styles.Image4} loading='lazy' src={Image4} alt={''} />
+                <Image className={styles.Image5} loading='lazy' src={Image5} alt={''} />
+                <Image className={styles.Image6} loading='lazy' src={Image6} alt={''} />
                 <div className={styles.LeftSide}>
-                    <Image className={styles.Logo} src={Logo} alt={''} />
+                    <Image className={styles.Logo} loading='lazy' src={Logo} alt={''} />
                 </div>
                 <div className={styles.RightSide}>
                     <div className={styles.TextBox}>
