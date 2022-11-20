@@ -29,7 +29,7 @@
     text-decoration: none;
     position: relative;
     z-index: 1;
-    width: 75%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,62 +118,20 @@
     opacity: .25;
 }
 
-.Image1 {
-    object-fit: contain;
-    width: 300px;
-    position: absolute;
-    z-index: 1;
-    filter: brightness(.5) contrast(.95);
-    right: 33%;
-    margin: -3rem 0 0 0;
-}
-
-.Image2 {
-    object-fit: contain;
-    width: 420px;
-    position: absolute;
-    z-index: 1;
-    filter: brightness(.5) contrast(.95);
-    right: 5%;
-    margin: 8rem 0 0 0;
-}
-
-.Image3 {
-    object-fit: contain;
-    width: 375px;
-    position: absolute;
-    z-index: 1;
-    filter: brightness(.5) contrast(.95);
-    right: 7%;
-    margin: -8rem 0 0 0;
-}
-
 .Image4 {
     object-fit: contain;
-    width: 300px;
-    position: absolute;
+    width: 320px;
+    padding: 1rem;
     z-index: 1;
-    filter: brightness(.5) contrast(.95);
-    right: 33%;
-    margin: -3rem 0 0 0;
-}
-
-.Image5 {
-    object-fit: contain;
-    width: 400px;
-    position: absolute;
+    background-position: center;
+    background-size: cover;
+    position: relative;
     z-index: 1;
-    filter: brightness(.5) contrast(.95);
-    right: 5%;
-    margin: 8rem 0 0 0;
-}
-
-.Image6 {
-    object-fit: contain;
-    width: 375px;
-    position: absolute;
-    z-index: 1;
-    filter: brightness(.5) contrast(.95);
-    right: 7%;
-    margin: -8rem 0 0 0;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.8)),
+        url(../../../Assets/cNewYork2.jpg);
 }

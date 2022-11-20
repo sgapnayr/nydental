@@ -1,0 +1,24 @@
+.Technology {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.5);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.5)),
+        url(../../../Assets/texture5.jpg);
+}
+
+.Office1 {
+    object-fit: cover;
+    width: 240px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.5);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.5)),
+        url(../../../Assets/office1.jpg);
+}

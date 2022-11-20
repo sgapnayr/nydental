@@ -14,7 +14,7 @@
   position: relative;
   z-index: 1;
   background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.25)),
-    url(../Assets/texture2.jpg);
+    url(../../../Assets/texture2.jpg);
 }
 
 .Hero {

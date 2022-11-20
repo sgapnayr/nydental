@@ -4,8 +4,7 @@ import Hero from '../Components/Home/Hero/Hero'
 import Info1 from '../Components/Home/Info1/Info1'
 import Info2 from '../Components/Home/Info2/Info2'
 import Info3 from '../Components/Home/Info3/Info3'
-import Reviews from '../Components/Home/Reviews/Reviews'
-import styles from '../styles/Hero.module.css'
+import styles from '../Components/Home/Hero/Hero.module.css'
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
         <Info2 />
         <Carousel />
         <Info3 />
-        <Reviews />
       </main>
 
     </div >

@@ -1,0 +1,50 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.HeroContainer {
+    scroll-snap-align: center;
+    width: 100vw;
+    min-height: 75vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.5)),
+        url(../../../Assets/office2.jpg);
+}
+
+.Hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    flex-direction: column;
+}
+
+.HeroHead {
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.HeroDesc {
+    font-size: 1rem;
+    letter-spacing: 1rem;
+    opacity: .5;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    font-style: italic;
+    margin: 1rem 0 1rem 0;
+}
+
+.HeroLine {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    margin: 2rem 0 1rem 0;
+    height: 1px;
+    width: 55%;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
+}

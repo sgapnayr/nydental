@@ -35,9 +35,9 @@
 
 .Input {
     width: 90%;
-    height: 48px;
-    margin: 1rem;
-    border: 2px solid rgba(0, 0, 0, .2);
+    height: 64px;
+    margin: 0.5rem 0 1rem 0;
+    border: none;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
     border-radius: 30px;
     text-align: center;
@@ -47,6 +47,7 @@
     align-items: center;
     flex-direction: row;
     background: transparent;
+    outline: none;
 }
 
 .EmergencyDiv {
@@ -59,7 +60,43 @@
     overflow: hidden;
     border-radius: 30px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
-    margin: 1rem;
+    margin: .5rem 0 2rem 0;
+}
+
+.EmergencyButton {
+    padding: 1rem;
+    width: 100%;
+    height: 64px;
+    border: none;
+    color: white;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),
+        url(../../../Assets/texture3.jpg);
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.EmergencyButtonHighlighted {
+    padding: 1rem;
+    width: 100%;
+    height: 64px;
+    border: none;
+    color: black;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(231, 232, 235, 0.4)),
+        url(../../../Assets/texture3.jpg);
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.EmergencyButton:hover {
+    background: rgb(210, 210, 210);
+    color: rgb(140, 140, 140);
+}
+
+.EmergencyButton:active {
+    background: black;
+    color: white;
 }
 
 .SubmitButton {
@@ -67,9 +104,14 @@
     width: 100%;
     height: 64px;
     border: none;
-    background-color: rgb(167, 88, 88);
+    color: white;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),
+        url(../../../Assets/texture3.jpg);
     cursor: pointer;
     transition: .2s all ease-in-out;
+    border-radius: 30px;
 }
 
 .SubmitButton:hover {
