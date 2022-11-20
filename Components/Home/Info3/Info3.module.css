@@ -6,3 +6,95 @@
     align-items: center;
     flex-direction: row;
 }
+
+.Carousel {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(23, 23, 23);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    flex-direction: column;
+    color: white;
+}
+
+.Name {
+    font-size: 2rem;
+    font-weight: 300;
+    width: 90%;
+    margin-top: 16px;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
+}
+
+.LineWrapper {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(196, 196, 196);
+}
+
+.Line {
+    background: linear-gradient(170deg, rgba(6, 245, 255, 1) 0%, rgba(210, 30, 196, 0) 95%);
+    width: 50%;
+    height: 1px;
+    display: flex;
+    justify-content: start;
+}
+
+.Line2 {
+    background: linear-gradient(170deg, rgba(6, 245, 255, 1) 0%, rgba(210, 30, 196, 0) 95%);
+    width: 50%;
+    height: 1px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: start;
+}
+
+.ImageWrapper {
+    width: 90%;
+    object-fit: contain;
+    height: 5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 2em;
+    border-radius: 10px;
+}
+
+.Image {
+    object-fit: contain;
+    width: 5rem;
+}
+
+.StatsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.Stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.25rem 0;
+    font-style: italic;
+    font-weight: 200;
+    opacity: .5;
+}
+
+.Desc {
+    width: 90%;
+    font-size: 1.5rem;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
