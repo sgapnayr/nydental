@@ -36,10 +36,10 @@
 }
 
 .Link:hover {
-    color: gold;
-    border-bottom: 1px solid gold;
+    color: rgb(171, 152, 42);
+    border-bottom: 1px solid rgb(171, 152, 42);
 }
 
 .Link:active {
-    color: rgb(189, 15, 166);
+    opacity: 0;
 }

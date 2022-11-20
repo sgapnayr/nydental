@@ -14,9 +14,9 @@ function Info2() {
     return (
         <>
             <div className={styles.Info2}>
-                <Image className={styles.Image4} loading='lazy' src={Image4} alt={''} />
-                <Image className={styles.Image5} loading='lazy' src={Image5} alt={''} />
-                <Image className={styles.Image6} loading='lazy' src={Image6} alt={''} />
+                <Image className={styles.Image4} loading='eager' src={Image4} alt={''} />
+                <Image className={styles.Image5} loading='eager' src={Image5} alt={''} />
+                <Image className={styles.Image6} loading='eager' src={Image6} alt={''} />
                 <div className={styles.LeftSide}>
                     <Image className={styles.Logo} loading='lazy' src={Logo} alt={''} />
                 </div>

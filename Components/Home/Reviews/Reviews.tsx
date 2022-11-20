@@ -29,14 +29,6 @@ function Reviews() {
                 <div className={styles.InputDiv}>
                     Reason.
                     <input className={styles.Input} placeholder='I am having a tooth ache...' type="text" onChange={(e) => setValue(e.target.value)} value={value} />
-                    <input
-                        type="text"
-                        id="roll"
-                        name="roll"
-                        required
-                        minlength="10"
-                        maxlength="20"
-                    />
                 </div>
                 <div className={styles.InputDiv}>
                     Emergency?
