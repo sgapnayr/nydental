@@ -18,7 +18,7 @@ body {
 }
 
 strong {
-  background: -webkit-linear-gradient(#ffe413be, rgb(254, 228, 78));
+  background: -webkit-linear-gradient(#b5a214, rgb(184, 163, 45));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

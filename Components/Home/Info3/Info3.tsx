@@ -1,15 +1,16 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import React from 'react'
 import styles from './Info3.module.css'
 import Person from '../../../Assets/person4.jpg'
 
 function Info() {
-    // TODO Make this a .map
+    // TODO Make this a .map of DB
     return (
         <div className={styles.Info3}>
             <div className={styles.Carousel}>
                 <div className={styles.Name}>
-                    Ryan
+                    <strong>NYD</strong> Patient
                 </div>
                 <div className={styles.LineWrapper}>
                     <div className={styles.Line}>
@@ -33,6 +34,10 @@ function Info() {
 
                 <div className={styles.Desc}>
                     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius qui sint laborum voluptate consectetur, quibusdam blanditiis hic consequuntur, aliquid ea consequatur magnam, eveniet et nisi pariatur laboriosam explicabo iste saepe?"
+                </div>
+                <div className={styles.AppointmentCard}>
+                    <div className={styles.AppointmentLine} />
+                    <div className={styles.Appointment}>Ryan</div>
                 </div>
             </div>
         </div>

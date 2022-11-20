@@ -29,7 +29,7 @@
 .HeroHead {
   font-size: 3rem;
   font-style: italic;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, .75);
 }
 
 .HeroDesc {
@@ -51,8 +51,8 @@
 
 .HeroLine {
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
-  margin: 1rem 0 -1rem 0;
-  border-top: 1px solid white;
-  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  height: 1px;
   width: 55%;
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0) 100%);
 }

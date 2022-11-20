@@ -26,10 +26,11 @@
     color: white;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
     padding: 1.5rem;
-    border-image: linear-gradient(#ecd73e, gold) 30;
+    border-image: linear-gradient(#bcae48, rgb(156, 138, 32)) 30;
     border-width: 2px;
     border-style: solid;
     z-index: 1;
+    margin-top: 50px;
     margin-right: 50px;
     margin-bottom: 200px;
     font-style: italic;
@@ -56,12 +57,12 @@
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
     padding: 2rem;
-    border-image: linear-gradient(#ecd73e, gold) 30;
+    border-image: linear-gradient(#bcae48, rgb(156, 138, 32)) 30;
     border-width: 2px;
     border-style: solid;
     z-index: 1;
     margin-right: 200px;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .InfoCard3 {
@@ -73,7 +74,7 @@
     color: black;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
     padding: 2rem;
-    border-image: linear-gradient(#ecd73e, gold) 30;
+    border-image: linear-gradient(#bcae48, rgb(156, 138, 32)) 30;
     border-bottom: 2px solid;
     z-index: 1;
     color: white;

@@ -9,7 +9,7 @@ function Hero() {
                     Welcome to <strong>NYD</strong>
                 </div>
                 <p className={styles.HeroDesc}>New York Dental</p>
-                <p className={styles.HeroLine}></p>
+                <div className={styles.HeroLine}></div>
                 <p className={styles.HeroDesc2}>The Premium Oral Choice</p>
             </div>
         </div>
