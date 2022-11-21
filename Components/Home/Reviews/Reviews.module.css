@@ -68,7 +68,7 @@
     height: 64px;
     margin: 0.5rem 0 1rem 0;
     border: none;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .25) inset;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .25);
     border-radius: 30px;
     text-align: center;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
@@ -80,6 +80,7 @@
     outline: none;
     color: white;
     font-size: 1rem;
+    backdrop-filter: blur(18px);
 }
 
 .Input::placeholder {
@@ -158,4 +159,72 @@
 .SubmitButton:active {
     background: white;
     color: black;
+}
+
+.UnHideModal {
+    position: absolute;
+    box-shadow: 1px 1px 10px 1000px rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    border-radius: 30px;
+}
+
+.HideModal {
+    display: none;
+}
+
+.Modal {
+    width: 500px;
+    height: 40vh;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../../../Assets/newyork3.jpg);
+}
+
+.SubmissionText {
+    margin: 0rem 0 1rem;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
+    font-style: italic;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(196, 196, 196));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ModalButton {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    font-style: italic;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),
+        url(../../../Assets/texture3.jpg);
+}
+
+.ModalButton:hover {
+    background: rgb(210, 210, 210);
+    color: rgb(140, 140, 140);
+}
+
+.ModalButton:active {
+    background: black;
+    color: white;
+}
+
+.FirstName {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .25);
 }
