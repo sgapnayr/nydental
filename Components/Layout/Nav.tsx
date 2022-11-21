@@ -11,7 +11,6 @@ function Nav() {
             <div className={styles.Selectors}>
                 <Link className={styles.Link} href={'/'}>Home</Link>
                 <Link className={styles.Link} href={'/About'}>About</Link>
-                <Link className={styles.Link} href={'/location'}>Location</Link>
             </div>
             <div className={styles.Logo} />
         </section>

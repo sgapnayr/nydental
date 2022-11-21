@@ -1,6 +1,6 @@
 import Head from "next/head"
 import BookHero from "../../Components/Book/BookHero/BookHero"
-import Reviews from "../../Components/Book/Reviews/Reviews"
+import Reviews from "../../Components/Home/Reviews/Reviews"
 import Technology from "../../Components/Book/Technology/Technology"
 
 function index() {
@@ -15,7 +15,6 @@ function index() {
             <main>
                 <BookHero />
                 <Technology />
-                <Reviews />
             </main>
         </div>
     )

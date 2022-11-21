@@ -5,6 +5,7 @@ import Info1 from '../Components/Home/Info1/Info1'
 import Info2 from '../Components/Home/Info2/Info2'
 import Info3 from '../Components/Home/Info3/Info3'
 import styles from '../Components/Home/Hero/Hero.module.css'
+import Reviews from '../Components/Home/Reviews/Reviews'
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <Hero />
         <Info1 />
         <Info2 />
-        <Carousel />
+        <Reviews />
         <Info3 />
       </main>
 
