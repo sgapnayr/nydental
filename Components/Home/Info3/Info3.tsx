@@ -77,8 +77,6 @@ function Info() {
                 <div className={styles.IconHover}>
                     <AiOutlineLeft className={styles.IconLeft} onClick={scrollLeft} />
                 </div>
-            </div>
-            <div className={styles.IconDiv}>
                 <div className={styles.IconHover}>
                     <AiOutlineRight className={styles.IconRight} onClick={scrollRight} />
                 </div>

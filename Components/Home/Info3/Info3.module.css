@@ -13,6 +13,17 @@
         url(../../../Assets/clouds.jpg);
 }
 
+.IconDiv {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s all ease-in-out;
+    position: absolute;
+    padding: .5rem;
+    width: 100%;
+    display: flex;
+}
 
 .IconLeft {
     display: flex;
@@ -21,9 +32,7 @@
     opacity: .25;
     transition: .2s all ease-in-out;
     cursor: pointer;
-    position: absolute;
-    left: 0%;
-    top: 2000%;
+    margin: 1rem;
 }
 
 .IconLeft:hover {
@@ -45,9 +54,6 @@
     transition: .2s all ease-in-out;
     cursor: pointer;
     z-index: 0;
-    position: absolute;
-    right: 0%;
-    top: 2000%;
 }
 
 .IconRight:hover {
@@ -59,15 +65,6 @@
 .IconRight:active {
     opacity: 0;
     transform: translateX(0%);
-}
-
-.IconDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .2s all ease-in-out;
-    position: relative;
-    padding: .5rem;
 }
 
 .IconHover {
