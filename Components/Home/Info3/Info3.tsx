@@ -57,84 +57,91 @@ function Info() {
     }
 
     useEffect(() => {
-        setTimeout(() => {
+        const interval = setInterval(() => {
             if (index === 2) {
                 setIndex(0)
                 return
             }
             setIndex(index => index + 1)
         }, 5000)
+
+        return () => {
+            clearInterval(interval)
+        }
     }, [index])
 
-    // TODO Make this a .map of DB
+    // TODO .map of DB
     return (
-        <div className={styles.Info3}>
-            <div className={styles.InfoTitle}>Previous Patients...</div>
-
-            <div className={styles.CardList}>
-
-                <div className={styles.IconDiv}>
-                    <div className={styles.IconHover}>
-                        <AiOutlineLeft className={styles.IconLeft} onClick={scrollLeft} />
-                    </div>
+        <div className={styles.Wrapper}>
+            <div className={styles.IconDiv}>
+                <div className={styles.IconHover}>
+                    <AiOutlineLeft className={styles.IconLeft} onClick={scrollLeft} />
                 </div>
-
-                {cards.map((card, i) => {
-                    const leftIndex = mod(index - 1, cards.length)
-                    const rightIndex = mod(index + 1, cards.length)
-
-
-                    let className = ""
-                    if (i === index) {
-                        className = styles.Carousel
-                    } else if (i === leftIndex) {
-                        className = styles.CarouselLeft
-                    } else if (i === rightIndex) {
-                        className = styles.CarouselRight
-                    }
-
-                    return (
-                        <>
-                            <div className={className}>
-                                <div className={styles.Name}>
-                                    <strong>NYD</strong> Patient
-                                </div>
-                                <div className={styles.LineWrapper}>
-                                    <div className={styles.Line}>
-                                        <div className={styles.Line2}></div>
-                                    </div>
-                                </div>
-                                <div className={styles.ImageWrapper}>
-                                    <Image className={styles.Image} loading='lazy' src={card.image} alt='' />
-                                    <div className={styles.StatsWrapper}>
-                                        <div className={styles.Stats}>
-                                            Name: {card.name}
-                                        </div>
-                                        <div className={styles.Stats}>
-                                            Occupation: {card.occupation}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={styles.Desc}>
-                                    {card.description}
-                                </div>
-                                <div className={styles.AppointmentCard}>
-                                    <div className={styles.AppointmentLine} />
-                                    <div className={styles.Appointment}>{card.name.split(' ')[0]}</div>
-                                </div>
-                            </div>
-                        </>
-                    )
-                })}
-
-                <div className={styles.IconDiv}>
-                    <div className={styles.IconHover}>
-                        <AiOutlineRight className={styles.IconRight} onClick={scrollRight} />
-                    </div>
+            </div>
+            <div className={styles.IconDiv}>
+                <div className={styles.IconHover}>
+                    <AiOutlineRight className={styles.IconRight} onClick={scrollRight} />
                 </div>
             </div>
 
-        </div >
+            <div className={styles.Info3}>
+
+                <div className={styles.CardList}>
+
+
+
+                    {cards.map((card, i) => {
+                        const leftIndex = mod(index - 1, cards.length)
+                        const rightIndex = mod(index + 1, cards.length)
+
+
+                        let className = ""
+                        if (i === index) {
+                            className = styles.Carousel
+                        } else if (i === leftIndex) {
+                            className = styles.CarouselLeft
+                        } else if (i === rightIndex) {
+                            className = styles.CarouselRight
+                        }
+
+                        return (
+                            <>
+                                <div className={className}>
+                                    <div className={styles.Name}>
+                                        <strong>NYD</strong> Patient
+                                    </div>
+                                    <div className={styles.LineWrapper}>
+                                        <div className={styles.Line}>
+                                            <div className={styles.Line2}></div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.ImageWrapper}>
+                                        <Image className={styles.Image} loading='lazy' src={card.image} alt='' />
+                                        <div className={styles.StatsWrapper}>
+                                            <div className={styles.Stats}>
+                                                Name: {card.name}
+                                            </div>
+                                            <div className={styles.Stats}>
+                                                Occupation: {card.occupation}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={styles.Desc}>
+                                        {card.description}
+                                    </div>
+                                    <div className={styles.AppointmentCard}>
+                                        <div className={styles.AppointmentLine} />
+                                        <div className={styles.Appointment}>{card.name.split(' ')[0]}</div>
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    })}
+
+                </div>
+
+            </div >
+        </div>
     )
 }
 
