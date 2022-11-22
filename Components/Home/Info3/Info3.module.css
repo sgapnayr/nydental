@@ -14,7 +14,7 @@
     margin: 1rem;
 }
 
-.Icon {
+.IconLeft {
     display: flex;
     justify-content: center;
     font-size: 3rem;
@@ -23,13 +23,35 @@
     cursor: pointer;
 }
 
-.Icon:hover {
+.IconLeft:hover {
     opacity: 1;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .75);
+    transform: translateX(-10%);
 }
 
-.Icon:active {
+.IconLeft:active {
     opacity: 0;
+    transform: translateX(0%);
+}
+
+.IconRight {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    opacity: .25;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.IconRight:hover {
+    opacity: 1;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .75);
+    transform: translateX(10%);
+}
+
+.IconRight:active {
+    opacity: 0;
+    transform: translateX(0%);
 }
 
 .IconDiv {
@@ -37,7 +59,7 @@
     justify-content: center;
     align-items: center;
     transition: .2s all ease-in-out;
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .IconHover {
@@ -68,7 +90,7 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     flex-direction: column;
     color: white;
-    transition: .2s all ease-in-out;
+    transition: .5s all ease-in-out;
     font-size: small;
     scale: .75;
 }

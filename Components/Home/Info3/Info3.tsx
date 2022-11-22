@@ -74,7 +74,7 @@ function Info() {
             <div className={styles.CardList}>
                 <div className={styles.IconDiv}>
                     <div className={styles.IconHover}>
-                        <AiOutlineLeft className={styles.Icon} onClick={scrollLeft} />
+                        <AiOutlineLeft className={styles.IconLeft} onClick={scrollLeft} />
                     </div>
                 </div>
 
@@ -128,7 +128,7 @@ function Info() {
 
                 <div className={styles.IconDiv}>
                     <div className={styles.IconHover}>
-                        <AiOutlineRight className={styles.Icon} onClick={scrollRight} />
+                        <AiOutlineRight className={styles.IconRight} onClick={scrollRight} />
                     </div>
                 </div>
             </div>
