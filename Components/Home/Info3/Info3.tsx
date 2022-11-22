@@ -56,20 +56,20 @@ function Info() {
         setIndex(index => index + 1)
     }
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         if (index === 2) {
-    //             setIndex(0)
-    //             return
-    //         }
-    //         setIndex(index => index + 1)
-    //     }, 5000)
-    // }, [index])
+    useEffect(() => {
+        setTimeout(() => {
+            if (index === 2) {
+                setIndex(0)
+                return
+            }
+            setIndex(index => index + 1)
+        }, 5000)
+    }, [index])
 
     // TODO Make this a .map of DB
     return (
         <div className={styles.Info3}>
-            {/* <div className={styles.InfoTitle}>Previous Patients...</div> */}
+            <div className={styles.InfoTitle}>Previous Patients...</div>
 
             <div className={styles.CardList}>
                 <div className={styles.IconDiv}>
