@@ -13,6 +13,7 @@
   background-size: cover;
   position: relative;
   z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .5) inset;
   background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.25)),
     url(../../../Assets/texture2.jpg);
 }

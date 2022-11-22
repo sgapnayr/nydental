@@ -184,10 +184,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2);
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-        url(../../../Assets/newyork3.jpg);
+    background: rgb(18, 18, 18);
+    background: linear-gradient(133deg, rgba(18, 18, 18, 1) 0%, rgba(34, 34, 34, 1) 43%, rgba(0, 0, 0, 1) 90%);
 }
 
 .SubmissionText {

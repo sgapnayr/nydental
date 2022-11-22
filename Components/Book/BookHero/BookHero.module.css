@@ -13,7 +13,8 @@
     background-size: cover;
     position: relative;
     z-index: 1;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.2)),
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    background-image: linear-gradient(rgba(33, 34, 37, 0.2), rgba(163, 166, 179, .8)),
         url(../../../Assets/texture3.jpg);
 }
 
@@ -29,7 +30,7 @@
 .HeroHead {
     font-size: 3rem;
     font-style: italic;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .25);
 }
 
 .HeroDesc {

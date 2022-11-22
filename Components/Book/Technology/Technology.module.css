@@ -5,12 +5,12 @@
     align-items: center;
     scroll-snap-align: center;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     flex-direction: column;
     z-index: 1;
-    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.5);
-    background-image: linear-gradient(rgba(9, 12, 26, 0.5), rgba(4, 9, 30, 0.2)),
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.5) inset;
+    background-image: linear-gradient(rgba(39, 39, 51, 0.8), rgba(27, 30, 41, 0.2)),
         url(../../../Assets/texture5.jpg);
 }
 
