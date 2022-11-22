@@ -69,7 +69,7 @@
     margin: 0.5rem 0 1rem 0;
     padding: 1.5rem;
     border: none;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .25);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .25) inset;
     border-radius: 30px;
     text-align: center;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
@@ -81,7 +81,6 @@
     outline: none;
     color: white;
     font-size: 1rem;
-    backdrop-filter: blur(18px);
 }
 
 .Input::placeholder {
@@ -107,9 +106,8 @@
     height: 64px;
     border: none;
     color: white;
-    object-fit: cover;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),
-        url(../../../Assets/texture3.jpg);
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2) inset;
+    background: transparent;
     cursor: pointer;
     transition: .2s all ease-in-out;
 }
@@ -144,9 +142,8 @@
     border: none;
     color: white;
     object-fit: cover;
-    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2);
-    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),
-        url(../../../Assets/texture3.jpg);
+    box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2) inset;
+    background: transparent;
     cursor: pointer;
     transition: .2s all ease-in-out;
     border-radius: 30px;
@@ -186,8 +183,10 @@
     flex-direction: column;
     object-fit: contain;
     box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2);
-    background: rgb(18, 18, 18);
-    background: linear-gradient(133deg, rgba(18, 18, 18, 1) 0%, rgba(34, 34, 34, 1) 43%, rgba(0, 0, 0, 1) 90%);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.6)),
+        url(../../../Assets/texture3.jpg);
+    /* background: rgb(18, 18, 18);
+    background: linear-gradient(133deg, rgba(18, 18, 18, 1) 0%, rgba(34, 34, 34, 1) 43%, rgba(0, 0, 0, 1) 90%); */
 }
 
 .SubmissionText {
@@ -207,12 +206,11 @@
     transition: .2s all ease-in-out;
     font-style: italic;
     font-size: 1rem;
-    background: rgba(255, 255, 255, 0.15);
+    background: transparent;
+    backdrop-filter: blur(18px);
     color: white;
     object-fit: cover;
     box-shadow: 1px 1px 10px rgba(4, 9, 30, 0.2);
-    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)),
-        url(../../../Assets/texture3.jpg);
 }
 
 .ModalButton:hover {

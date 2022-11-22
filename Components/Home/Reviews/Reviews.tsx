@@ -62,6 +62,10 @@ function Reviews() {
                         <input className={styles.Input} placeholder='I am having a tooth ache...' type="text" onChange={(e) => setReason(e.target.value)} value={reason} />
                     </div>
                     <div className={styles.InputDiv}>
+                        Reason.
+                        <input className={styles.Input} placeholder='I am having a tooth ache...' type="text" onChange={(e) => setReason(e.target.value)} value={reason} />
+                    </div>
+                    <div className={styles.InputDiv}>
                         Emergency?
                         <div className={styles.EmergencyDiv}>
                             <button className={emergency !== false && emergency !== true ? styles.EmergencyButton : !emergency ? styles.EmergencyButtonHighlighted : styles.EmergencyButton} onClick={() => setEmergency(false)}>No</button>
