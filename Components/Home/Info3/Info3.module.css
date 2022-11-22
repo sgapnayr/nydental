@@ -1,13 +1,76 @@
 .Info3 {
     scroll-snap-align: center;
-    min-height: 75vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.InfoTitle {
+    font-size: 2rem;
+    opacity: .25;
+    font-style: italic;
+    margin: 1rem;
+}
+
+.Icon {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    opacity: .25;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.Icon:hover {
+    opacity: 1;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .75);
+}
+
+.Icon:active {
+    opacity: 0;
+}
+
+.IconDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s all ease-in-out;
+    margin: 1rem;
+}
+
+.IconHover {
+    display: flex;
+    border-radius: 50%;
+    transition: .2s all ease-in-out;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.IconHover:active {
+    opacity: 0;
+}
+
+.CardList {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
 }
 
 .Carousel {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(23, 23, 23);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    flex-direction: column;
+    color: white;
+}
+
+.CarouselLeft {
     width: 90%;
     height: 60vh;
     display: flex;
@@ -18,6 +81,25 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     flex-direction: column;
     color: white;
+    display: none;
+    opacity: .5;
+    scale: .75;
+}
+
+.CarouselRight {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(23, 23, 23);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    flex-direction: column;
+    color: white;
+    display: none;
+    opacity: .5;
+    scale: .75;
 }
 
 .Name {
@@ -67,7 +149,8 @@
 
 .Image {
     object-fit: contain;
-    width: 5rem;
+
+    width: 10rem;
 }
 
 .StatsWrapper {

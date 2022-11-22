@@ -202,7 +202,6 @@
     padding: 1rem 2rem;
     border-radius: 30px;
     border: none;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
     cursor: pointer;
     transition: .2s all ease-in-out;
     font-style: italic;
