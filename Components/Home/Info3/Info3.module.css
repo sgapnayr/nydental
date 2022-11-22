@@ -69,6 +69,7 @@
     align-items: center;
     transition: .2s all ease-in-out;
     position: relative;
+    padding: .5rem;
 }
 
 .IconHover {
@@ -99,7 +100,7 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     flex-direction: column;
     color: white;
-    transition: .5s all ease-in-out;
+    transition: .75s all ease-in-out;
     font-size: small;
     scale: .75;
 }

@@ -72,11 +72,12 @@ function Info() {
             <div className={styles.InfoTitle}>Previous Patients...</div>
 
             <div className={styles.CardList}>
-                {/* <div className={styles.IconDiv}>
+
+                <div className={styles.IconDiv}>
                     <div className={styles.IconHover}>
                         <AiOutlineLeft className={styles.IconLeft} onClick={scrollLeft} />
                     </div>
-                </div> */}
+                </div>
 
                 {cards.map((card, i) => {
                     const leftIndex = mod(index - 1, cards.length)
@@ -126,7 +127,11 @@ function Info() {
                     )
                 })}
 
-
+                <div className={styles.IconDiv}>
+                    <div className={styles.IconHover}>
+                        <AiOutlineRight className={styles.IconRight} onClick={scrollRight} />
+                    </div>
+                </div>
             </div>
 
         </div >
