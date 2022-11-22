@@ -68,9 +68,14 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     flex-direction: column;
     color: white;
+    transition: .2s all ease-in-out;
+    font-size: small;
+    scale: .75;
 }
 
 .CarouselLeft {
+    position: absolute;
+    margin-top: 18rem;
     width: 90%;
     height: 60vh;
     display: flex;
@@ -81,12 +86,16 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     flex-direction: column;
     color: white;
-    display: none;
     opacity: .5;
     scale: .75;
+    transition: .2s all ease-in-out;
+    z-index: -1;
+    scale: .35;
 }
 
 .CarouselRight {
+    position: absolute;
+    margin-top: -18rem;
     width: 90%;
     height: 60vh;
     display: flex;
@@ -97,9 +106,11 @@
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     flex-direction: column;
     color: white;
-    display: none;
     opacity: .5;
     scale: .75;
+    transition: .2s all ease-in-out;
+    z-index: -1;
+    scale: .35;
 }
 
 .Name {

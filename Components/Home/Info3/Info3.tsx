@@ -56,20 +56,20 @@ function Info() {
         setIndex(index => index + 1)
     }
 
-    useEffect(() => {
-        setTimeout(() => {
-            if (index === 2) {
-                setIndex(0)
-                return
-            }
-            setIndex(index => index + 1)
-        }, 5000)
-    }, [index])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         if (index === 2) {
+    //             setIndex(0)
+    //             return
+    //         }
+    //         setIndex(index => index + 1)
+    //     }, 5000)
+    // }, [index])
 
     // TODO Make this a .map of DB
     return (
         <div className={styles.Info3}>
-            <div className={styles.InfoTitle}>Previous Patients...</div>
+            {/* <div className={styles.InfoTitle}>Previous Patients...</div> */}
 
             <div className={styles.CardList}>
                 <div className={styles.IconDiv}>
@@ -77,6 +77,7 @@ function Info() {
                         <AiOutlineLeft className={styles.Icon} onClick={scrollLeft} />
                     </div>
                 </div>
+
                 {cards.map((card, i) => {
                     const leftIndex = mod(index - 1, cards.length)
                     const rightIndex = mod(index + 1, cards.length)
@@ -124,6 +125,7 @@ function Info() {
                         </>
                     )
                 })}
+
                 <div className={styles.IconDiv}>
                     <div className={styles.IconHover}>
                         <AiOutlineRight className={styles.Icon} onClick={scrollRight} />
@@ -131,7 +133,7 @@ function Info() {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 
