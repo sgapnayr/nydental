@@ -97,7 +97,7 @@
 
 .CarouselLeft {
     position: absolute;
-    margin-top: 18rem;
+    margin-top: 15rem;
     width: 90%;
     height: 60vh;
     display: flex;
@@ -117,7 +117,7 @@
 
 .CarouselRight {
     position: absolute;
-    margin-top: -18rem;
+    margin-top: -15rem;
     width: 90%;
     height: 60vh;
     display: flex;
